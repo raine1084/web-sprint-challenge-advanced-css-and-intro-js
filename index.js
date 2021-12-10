@@ -231,8 +231,8 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array, index) {
+  
 }
 
 
@@ -282,11 +282,12 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array, id, name, years, genre, nationality, bio) {
+  const newArtist= [];
+  array.push(newArtist)
+  return array;
 }
-
-
+console.log(artists, 20, 'LaVonda', 1984 - 2021, 'Web Design', 'American', 'She is a great artist. She overcame many obstacles.'),
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
