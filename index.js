@@ -232,9 +232,9 @@ Use getArtistByIndex to do the following:
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, index) {
-   
+   return `the artist at index ${index} is ${array[index].name}`;
 }
-
+console.log(getArtistByIndex(artists, 2));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -247,9 +247,15 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  
+  const newArray = [];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].year.string(' - ') > 1900 && array[i].year.string(' - ') <= 2000){
+      newArray.push(array[i].name);
+    }
+  }
+  return newArray;
 }
-
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
