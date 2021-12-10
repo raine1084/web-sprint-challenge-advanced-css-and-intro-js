@@ -250,12 +250,12 @@ function get20s(array) {
   const newArray = [];
   for(let i = 0; i < array.length; i++){
     if(array[i].year.split(' - ') > '1900' && array[i].year.split(' - ') <= '2000'){
-      newArray.push(array[i].name);
+      newArray.push(array[i].name)
     }
   }
-  return newArray;
+  return split;
 }
-console.log(get20s(artists[i]));
+console.log(get20s(artists));
 
 
 
@@ -269,11 +269,12 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, number) {
-  const newArray = array.splice(12, 1);
-  return newArray.splice;
+  const takeAwayArtist = [];
+  array.splice(takeAwayArtist);
+  return array;
 }
+console.log(artists, 3);
 
-console.log(newArray);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
@@ -290,12 +291,14 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array) {
+function addArtist(array, id, name, years, genre, nationality, bio) {
 const newArtist = [];
-array.push(20, 'LaVonda', 1984 - 2021, 'Web Design', 'American', 'She is a great artist. She overcame many obstacles.');
+array.push(newArtist);
+
 return array;
-} 
-  
+}
+console.log(artists, 20, 'LaVonda', 1984 - 2021, 'Web Design', 'American', 'She is a great artist. She overcame many obstacles.');
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -303,9 +306,10 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  return array.filter;
 }
+
 
 
 /* ***** END OF TASKS ***** */
