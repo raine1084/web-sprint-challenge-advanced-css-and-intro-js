@@ -232,7 +232,7 @@ Use getArtistByIndex to do the following:
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, index) {
-  
+   
 }
 
 
@@ -246,8 +246,8 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(array) {
+  
 }
 
 
@@ -282,13 +282,12 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array, id, name, years, genre, nationality, bio) {
-  const newArtist= [];
-  array.push(newArtist)
-  return array;
-}
-console.log(artists, 20, 'LaVonda', 1984 - 2021, 'Web Design', 'American', 'She is a great artist. She overcame many obstacles.'),
-
+function addArtist(array) {
+const newArtist = [];
+array.push(20, 'LaVonda', 1984 - 2021, 'Web Design', 'American', 'She is a great artist. She overcame many obstacles.');
+return array;
+} 
+  
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
